@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ToDo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📝 My ToDo App</h1>
+
+  <div class="form">
+    <input type="number" id="todo-id" placeholder="ID" />
+    <input type="text" id="todo-title" placeholder="Title" />
+    <label>
+      <input type="checkbox" id="todo-completed" /> Completed
+    </label>
+    <button onclick="addTodo()">Add</button>
+  </div>
+
+  <div class="form">
+    <input type="number" id="search-id" placeholder="Search ID" />
+    <button onclick="getTodoById()">Get Todo by ID</button>
+  </div>
+
+  <button onclick="fetchTodos()">🔁 Refresh All Todos</button>
+
+  <ul id="todo-list"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
